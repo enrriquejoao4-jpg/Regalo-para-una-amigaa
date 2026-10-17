@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sharon</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=Caveat:wght@500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="cielo" aria-hidden="true"></canvas>
+<button class="player" id="player" aria-label="Poner o pausar la música">
+  <span class="ic" id="pIcon">▶</span>
+  <span class="tx"><small id="pEstado">Toca para escuchar</small><b>Sharon · Inzul</b></span>
+  <span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>
+</button>
+<audio id="audio" loop preload="auto" src="sharon.mp3"></audio>
+<main>
+  <section class="hero">
+    <h1 id="nombre">Para ti</h1>
+    <p id="subtitulo">Solo leelo tú.</p>
+    <p class="pista">Toca el cielooooo!</p>
+  </section>
+
+  <section>
+    <h2>Llevamos siendo amigos…</h2>
+    <div class="contador" id="contador" role="timer" aria-live="off"></div>
+  </section>
+
+  <section>
+    <h2>El frasco de papelitos</h2>
+    <div class="frasco">
+      <button class="btn" id="sacar">Sacar un papelito</button>
+      <div class="papelito" id="papelito" aria-live="polite">Aquí aparece algo que me gusta de ti.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Una carta</h2>
+    <div class="carta" id="carta"></div>
+  </section>
+
+  <section class="fin">
+    <button class="btn" id="sorpresa">Última sorpresa</button>
+    <div id="mensajeFinal" aria-live="polite"></div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
